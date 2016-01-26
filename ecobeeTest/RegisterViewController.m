@@ -19,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.passCodeField becomeFirstResponder];
+    self.passCodeField.textColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {
