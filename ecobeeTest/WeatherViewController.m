@@ -34,6 +34,7 @@
                 [[LocationManager sharedInstance] startUpdatingLocation];
                 CLLocationCoordinate2D location = [[LocationManager sharedInstance] getLocation:nil];
                 NSLog(@"success, get location %f", location.latitude);
+                [self.weatherSwitch setOn:true];
             }
             else {
                 NSLog(@"fail");
@@ -44,9 +45,26 @@
 }
 
 - (IBAction)nextButtonPressed:(id)sender {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = nil;
+    
     if (self.weatherSwitch.isOn) {
-        
+        // Check if Location is on
+        if ([[LocationManager sharedInstance] locationAllowed]) {
+            // Show Details
+            vc = [storyboard instantiateViewControllerWithIdentifier:@"AddressID"];
+        }
+        else {
+            // Congrats Page
+            vc = [storyboard instantiateViewControllerWithIdentifier:@"CongratsID"];
+        }
     }
+    else {
+        // Go to Congrats page
+        vc = [storyboard instantiateViewControllerWithIdentifier:@"CongratsID"];
+    }
+    
+    [self.navigationController pushViewController:vc animated:true];
 }
 
 /*

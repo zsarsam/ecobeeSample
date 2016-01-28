@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.navigationItem setHidesBackButton:true animated:false];
+}
+
+- (IBAction)doneButtonPressed:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:false];
 }
 
 - (void)didReceiveMemoryWarning {

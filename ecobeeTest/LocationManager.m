@@ -11,7 +11,6 @@
 
 @interface LocationManager()
 
-@property (nonatomic) BOOL locationAllowed;
 @property (nonatomic, copy) void (^locationBlock)(BOOL success);
 
 @end

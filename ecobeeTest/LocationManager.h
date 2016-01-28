@@ -13,7 +13,10 @@
 
 + (LocationManager *)sharedInstance;
 
+@property BOOL locationAllowed;
+
 @property (nonatomic, strong) CLLocationManager* locationManager;
+
 - (CLLocationCoordinate2D) getLocation:(void (^)(BOOL success))locationBlock;
 - (void) startUpdatingLocation;
 - (void) stopUpdatingLocation;
