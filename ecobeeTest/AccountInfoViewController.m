@@ -7,6 +7,7 @@
 //
 
 #import "AccountInfoViewController.h"
+#import "WeatherViewController.h"
 
 @interface AccountInfoViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *firstNameField;
@@ -22,17 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-//    self.firstNameField.layer.borderWidth = 2.0;
-//    self.firstNameField.layer.borderColor = [UIColor clearColor].CGColor;
-//    self.lastNameField.layer.borderWidth = 2.0;
-//    self.lastNameField.layer.borderColor = [UIColor clearColor].CGColor;
-//    self.emailField.layer.borderWidth = 2.0;
-//    self.emailField.layer.borderColor = [UIColor clearColor].CGColor;
-//    self.passwordField.layer.borderWidth = 2.0;
-//    self.passwordField.layer.borderColor = [UIColor clearColor].CGColor;
-//    self.repeatPasswordField.layer.borderWidth = 2.0;
-//    self.repeatPasswordField.layer.borderColor = [UIColor clearColor].CGColor;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,7 +33,11 @@
 // Do validation checking on when next button pressed.
 // [Can fix for all valid together to enable, but no direction for user]
 - (IBAction)nextButtonPressed:(id)sender {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"WeatherID"];
+    [self.navigationController pushViewController:vc animated:true];
     
+    return;
     // First name field (3-20)
     if (![self checkFirstNameValid]) {
         self.firstNameField.layer.borderWidth = 2.0;
@@ -156,7 +150,7 @@
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (void)prepaeForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }

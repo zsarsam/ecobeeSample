@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046E7B861C5A77D6002E7963 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 046E7B851C5A77D6002E7963 /* LocationManager.m */; };
 		727345321B7210F7DAF2C468 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EA5B11AB31E4AEBFD04C7 /* libPods.a */; };
 		F124307E1C5A737E0005B9F9 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F124307D1C5A737E0005B9F9 /* WeatherViewController.m */; };
 		F1B730921C55D5FC004EA5D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B730911C55D5FC004EA5D4 /* main.m */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		046E7B841C5A77D6002E7963 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		046E7B851C5A77D6002E7963 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 		1408B7EAAFCBD9BF192D63D1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9F7497CE8CB003DD652667D7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E07EA5B11AB31E4AEBFD04C7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046E7B831C5A7793002E7963 /* LocationServices */ = {
+			isa = PBXGroup;
+			children = (
+				046E7B841C5A77D6002E7963 /* LocationManager.h */,
+				046E7B851C5A77D6002E7963 /* LocationManager.m */,
+			);
+			name = LocationServices;
+			sourceTree = "<group>";
+		};
 		A704FCB74171B6236B9CC7A4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +106,7 @@
 		F1B7308F1C55D5FC004EA5D4 /* ecobeeTest */ = {
 			isa = PBXGroup;
 			children = (
+				046E7B831C5A7793002E7963 /* LocationServices */,
 				F1B730931C55D5FC004EA5D4 /* AppDelegate.h */,
 				F1B730941C55D5FC004EA5D4 /* AppDelegate.m */,
 				F1B730A71C56EB15004EA5D4 /* LoginViewController.h */,
@@ -244,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046E7B861C5A77D6002E7963 /* LocationManager.m in Sources */,
 				F1B730951C55D5FC004EA5D4 /* AppDelegate.m in Sources */,
 				F1B730921C55D5FC004EA5D4 /* main.m in Sources */,
 				F124307E1C5A737E0005B9F9 /* WeatherViewController.m in Sources */,
