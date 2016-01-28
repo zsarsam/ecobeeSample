@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		727345321B7210F7DAF2C468 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EA5B11AB31E4AEBFD04C7 /* libPods.a */; };
+		F124307E1C5A737E0005B9F9 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F124307D1C5A737E0005B9F9 /* WeatherViewController.m */; };
 		F1B730921C55D5FC004EA5D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B730911C55D5FC004EA5D4 /* main.m */; };
 		F1B730951C55D5FC004EA5D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B730941C55D5FC004EA5D4 /* AppDelegate.m */; };
 		F1B7309B1C55D5FC004EA5D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B730991C55D5FC004EA5D4 /* Main.storyboard */; };
@@ -23,6 +24,8 @@
 		1408B7EAAFCBD9BF192D63D1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9F7497CE8CB003DD652667D7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E07EA5B11AB31E4AEBFD04C7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F124307C1C5A737E0005B9F9 /* WeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
+		F124307D1C5A737E0005B9F9 /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
 		F1B7308D1C55D5FC004EA5D4 /* ecobeeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ecobeeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B730911C55D5FC004EA5D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1B730931C55D5FC004EA5D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 				F1B730AE1C56EEC1004EA5D4 /* TermsConditionsViewController.m */,
 				F1B730B01C56F181004EA5D4 /* AccountInfoViewController.h */,
 				F1B730B11C56F181004EA5D4 /* AccountInfoViewController.m */,
+				F124307C1C5A737E0005B9F9 /* WeatherViewController.h */,
+				F124307D1C5A737E0005B9F9 /* WeatherViewController.m */,
 				F1B730991C55D5FC004EA5D4 /* Main.storyboard */,
 				F1B7309C1C55D5FC004EA5D4 /* Assets.xcassets */,
 				F1B7309E1C55D5FC004EA5D4 /* LaunchScreen.storyboard */,
@@ -241,6 +246,7 @@
 			files = (
 				F1B730951C55D5FC004EA5D4 /* AppDelegate.m in Sources */,
 				F1B730921C55D5FC004EA5D4 /* main.m in Sources */,
+				F124307E1C5A737E0005B9F9 /* WeatherViewController.m in Sources */,
 				F1B730B21C56F181004EA5D4 /* AccountInfoViewController.m in Sources */,
 				F1B730A91C56EB15004EA5D4 /* LoginViewController.m in Sources */,
 				F1B730AC1C56EC96004EA5D4 /* RegisterViewController.m in Sources */,
