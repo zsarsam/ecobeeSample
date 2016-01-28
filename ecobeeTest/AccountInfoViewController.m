@@ -46,30 +46,35 @@
     
     // First name field (3-20)
     if (![self checkFirstNameValid]) {
+        self.firstNameField.layer.borderWidth = 2.0;
         [self showAlert:@"First Name Field must be between 3-20 characters"];
         return;
     }
     
     // Last name field (3-20)
     if (![self checkLastNameValid]) {
+        self.lastNameField.layer.borderWidth = 2.0;
         [self showAlert:@"Last Name Field must be between 3-20 characters"];
         return;
     }
     
     // Email Field (valid email)
     if (![self checkEmailValid]) {
+        self.emailField.layer.borderWidth = 2.0;
         [self showAlert:@"Must enter a valid Email"];
         return;
     }
     
     // Password Field (no spaces)
     if (![self checkPassswordValid]) {
+        self.passwordField.layer.borderWidth = 2.0;
         [self showAlert:@"Password cannot contain any spaces"];
         return;
     }
     
     // Repeat Password Field (same as password)
     if (![self checkRepeatPasswordValid]) {
+        self.repeatPasswordField.layer.borderWidth = 2.0;
         [self showAlert:@"Passwords must match!"];
         return;
     }
@@ -125,6 +130,7 @@
 // TextField Delegate
 - (void) textFieldDidBeginEditing:(UITextField *)textField {
     textField.layer.borderColor = [UIColor clearColor].CGColor;
+    textField.layer.borderWidth = 0.0;
 }
 
 // Error handling
