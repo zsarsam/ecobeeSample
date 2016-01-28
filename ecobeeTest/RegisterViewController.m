@@ -45,7 +45,9 @@
 - (BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
     
     // Check to make sure length of string is 4 to enable button
-    if (textField.text.length + string.length == 4) {
+    // >= 4 because the return NO below, will prevent it from actually being entered.
+    // Make sure nothing is being deleted while textField.text.length == 4
+    if (textField.text.length + string.length >= 4 && ![string isEqualToString:@""]) {
         self.continueButton.enabled = true;
     }
     else {
