@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		727345321B7210F7DAF2C468 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EA5B11AB31E4AEBFD04C7 /* libPods.a */; };
 		F124307E1C5A737E0005B9F9 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F124307D1C5A737E0005B9F9 /* WeatherViewController.m */; };
+		F12430811C5A795A0005B9F9 /* AddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12430801C5A795A0005B9F9 /* AddressViewController.m */; };
+		F12430841C5A7C140005B9F9 /* CongratViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12430831C5A7C140005B9F9 /* CongratViewController.m */; };
 		F1B730921C55D5FC004EA5D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B730911C55D5FC004EA5D4 /* main.m */; };
 		F1B730951C55D5FC004EA5D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B730941C55D5FC004EA5D4 /* AppDelegate.m */; };
 		F1B7309B1C55D5FC004EA5D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B730991C55D5FC004EA5D4 /* Main.storyboard */; };
@@ -26,6 +28,10 @@
 		E07EA5B11AB31E4AEBFD04C7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F124307C1C5A737E0005B9F9 /* WeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
 		F124307D1C5A737E0005B9F9 /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
+		F124307F1C5A795A0005B9F9 /* AddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressViewController.h; sourceTree = "<group>"; };
+		F12430801C5A795A0005B9F9 /* AddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressViewController.m; sourceTree = "<group>"; };
+		F12430821C5A7C140005B9F9 /* CongratViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CongratViewController.h; sourceTree = "<group>"; };
+		F12430831C5A7C140005B9F9 /* CongratViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CongratViewController.m; sourceTree = "<group>"; };
 		F1B7308D1C55D5FC004EA5D4 /* ecobeeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ecobeeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B730911C55D5FC004EA5D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1B730931C55D5FC004EA5D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +112,10 @@
 				F1B730B11C56F181004EA5D4 /* AccountInfoViewController.m */,
 				F124307C1C5A737E0005B9F9 /* WeatherViewController.h */,
 				F124307D1C5A737E0005B9F9 /* WeatherViewController.m */,
+				F124307F1C5A795A0005B9F9 /* AddressViewController.h */,
+				F12430801C5A795A0005B9F9 /* AddressViewController.m */,
+				F12430821C5A7C140005B9F9 /* CongratViewController.h */,
+				F12430831C5A7C140005B9F9 /* CongratViewController.m */,
 				F1B730991C55D5FC004EA5D4 /* Main.storyboard */,
 				F1B7309C1C55D5FC004EA5D4 /* Assets.xcassets */,
 				F1B7309E1C55D5FC004EA5D4 /* LaunchScreen.storyboard */,
@@ -251,6 +261,8 @@
 				F1B730A91C56EB15004EA5D4 /* LoginViewController.m in Sources */,
 				F1B730AC1C56EC96004EA5D4 /* RegisterViewController.m in Sources */,
 				F1B730AF1C56EEC1004EA5D4 /* TermsConditionsViewController.m in Sources */,
+				F12430841C5A7C140005B9F9 /* CongratViewController.m in Sources */,
+				F12430811C5A795A0005B9F9 /* AddressViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
