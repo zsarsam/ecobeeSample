@@ -19,8 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.passCodeField becomeFirstResponder];
+    self.continueButton.enabled = false;
     self.passCodeField.textColor = [UIColor whiteColor];
+    self.passCodeField.layer.borderColor = [[UIColor whiteColor] CGColor];
+    self.passCodeField.layer.borderWidth = 1.0;
+    self.passCodeField.text = @"XXXX";
+    [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped)]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,8 +32,36 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) textFieldDidBeginEditing:(UITextField *)textField {
+    self.passCodeField.text = @"";
+}
+
+- (void) textFieldDidEndEditing:(UITextField *)textField {
+    if ([textField.text length] == 0) {
+        textField.text = @"XXXX";
+    }
+}
+
 - (BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    
+    // Check to make sure length of string is 4 to enable button
+    if (textField.text.length + string.length == 4) {
+        self.continueButton.enabled = true;
+    }
+    else {
+        self.continueButton.enabled = false;
+    }
+    
+    // Do not allow more than 4 characters to be entered
+    if (textField.text.length + string.length > 4) {
+        return NO;
+    }
+    
     return YES;
+}
+
+- (void) viewTapped {
+    [self.passCodeField resignFirstResponder];
 }
 
 /*

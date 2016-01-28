@@ -9,6 +9,8 @@
 #import "TermsConditionsViewController.h"
 
 @interface TermsConditionsViewController ()
+@property (weak, nonatomic) IBOutlet UISwitch *termsSwitch;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *nextButton;
 
 @end
 
@@ -17,11 +19,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"Terms & Conditions";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)switchToggled:(id)sender {
+    if (self.termsSwitch.isOn) {
+        self.nextButton.enabled = true;
+    }
+    else {
+        self.nextButton.enabled = false;
+    }
 }
 
 /*

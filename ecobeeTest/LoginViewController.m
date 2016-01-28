@@ -29,7 +29,7 @@
     self.emailTextField.leftView = email;
     self.emailTextField.layer.borderWidth = 1.0;
     self.emailTextField.layer.borderColor = [[UIColor whiteColor] CGColor];
-    self.emailTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"email" attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    self.emailTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Email" attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     self.emailTextField.textColor = [UIColor whiteColor];
     
     
@@ -41,7 +41,7 @@
     self.passwordTextField.leftView = password;
     self.passwordTextField.layer.borderWidth = 1.0;
     self.passwordTextField.layer.borderColor = [[UIColor whiteColor] CGColor];
-    self.passwordTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"password" attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    self.passwordTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Password" attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     self.passwordTextField.textColor = [UIColor whiteColor];
     
     
